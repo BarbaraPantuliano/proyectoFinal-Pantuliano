@@ -1,0 +1,72 @@
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  padding: 30px;
+  background-color: #333;
+  color: white;
+  align-items: center;
+}
+
+nav .logo {
+  height: 50%;          
+  width: auto;           
+  transform: rotate(-15deg);  
+  object-fit: contain;   
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 60px;
+}
+
+nav ul li a {
+  color: orangered;
+  text-decoration: none;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: x-large;
+}
+
+.cart-widget {
+  display: flex;
+  align-items: center;
+  font-size: 2rem; 
+  color: orangered; 
+}
+
+.cart-widget span {
+  font-size: 1rem;  
+  font-weight: bold;  
+  display: flex;
+  justify-content: center; 
+  align-items: center;     
+  width: 30px;        
+  height: 30px;       
+  margin-left: 8px;   
+  color: orangered;       
+  background-color: whitesmoke; 
+  border-radius: 50%; 
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); 
+}
+
+
+.item-list-container {
+  display: flex;
+  justify-content: center;  
+  align-items: center;      
+  text-align: center;       
+}
+
+.item-list-container h1 {
+  font-size: 2rem;         
+  color: #2C3E50;          
+  font-family: 'Arial', sans-serif; 
+  font-weight: bold;       
+  padding: 20px;           
+  background-color: orangered;
+  border-radius: 10px;     
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+}
+
+
