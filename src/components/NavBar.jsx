@@ -1,8 +1,11 @@
-import React from "react";
+import React, { useContext } from "react"
 import { Link, } from 'react-router-dom';
-import CartWidget from "./CartWidget";
+import { CartContext } from "../context/CartContext";
 
 function NavBar() {
+ 
+  const { totalItems } = useContext(CartContext); 
+
   return (
     <nav>
       <div className="logo">
@@ -14,8 +17,11 @@ function NavBar() {
         <li><Link to="/category/mujer">ROPA MUJER</Link></li>
         <li><Link to="/category/accesorios">ACCESORIOS</Link></li>
         <li><Link to="/contacto">CONTACTO</Link></li>
+        <li><Link to="/cart" className="cart-widget">
+                🛒 <span>{totalItems()}</span>
+            </Link>
+        </li>
       </ul>
-      <CartWidget />
     </nav>
   );
 }
